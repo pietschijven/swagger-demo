@@ -17,10 +17,17 @@ public class SwaggerUiApplication {
 	@Bean
 	public List<Greeting> greetings() {
 		List<Greeting> greetings = new ArrayList<>();
-		greetings.add(new Greeting(1L, "Hello World"));
-		greetings.add(new Greeting(2L, "Hallo Welt"));
-		greetings.add(new Greeting(3L, "Hallo Wereld"));
+		greetings.add(greeting(1L, "Hello World"));
+		greetings.add(greeting(2L, "Hallo Welt"));
+		greetings.add(greeting(3L, "Hallo Wereld"));
 
 		return greetings;
 	}
+
+    private Greeting greeting(final Long id, final String content) {
+	    Greeting greeting = new Greeting();
+	    greeting.setId(id);
+	    greeting.setContent(content);
+        return greeting;
+    }
 }

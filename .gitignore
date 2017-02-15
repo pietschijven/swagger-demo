@@ -22,3 +22,8 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### Swagger UI generated files ###
+swaggerdoc/definitions.adoc
+swaggerdoc/overview.adoc
+swaggerdoc/paths.adoc
